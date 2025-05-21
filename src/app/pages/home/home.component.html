@@ -1,0 +1,417 @@
+<header class="navbar">
+    <div class="navbar-content">
+      <div class="logo">
+        <img src="assets/andlogo.png" alt="Logo" />
+      </div>
+  
+      <button class="menu-toggle" (click)="toggleMenu()">☰</button>
+  
+      <nav class="nav-links">
+        <a href="#about">Acerca de</a>
+        <a href="#typesOf">Giros</a>
+        <a href="#features">Módulos</a>
+        <a href="#use-case">Casos de Éxito</a>
+        <a href="#pricing">Planes</a>
+      </nav>
+  
+      <div class="nav-buttons">
+        <button class="btn-outline small"  (click)="scrollToContact()">Contacto</button>
+      </div>
+    </div>
+  
+    <!-- Menú en móvil -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">Acerca de</a>
+      <a href="#typesOf">Giros</a>
+      <a href="#features">Módulos</a>
+      <a href="#use-case">Casos de Éxito</a>
+      <button class="btn-outline small"  (click)="scrollToContact()">Contacto</button>
+    </div>
+  </header>
+  
+
+<div class="hero-container">
+    <video autoplay muted loop playsinline class="background-video">
+        <source src="assets/map.mp4" type="video/mp4" />
+        Tu navegador no soporta videos HTML5.
+    </video>
+
+    <div class="hero-content">
+        <h1>Sistemas AND</h1>
+        <p>Optimiza tu operación con Apps And: geolocalización, monitoreo y soluciones logísticas en tiempo real.</p>
+        <div class="cta-buttons">
+            <button class="btn-outline"  (click)="scrollToContact()">Solicita una demo gratuita</button>
+            <button class="btn-outline"  (click)="scrollTyoeOf()">Habla con un Asesor</button>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="assets/mockup.png" alt="App Preview" />
+    </div>
+</div>
+<section id="about" class="about-area ptb-100">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-img">
+                    <img src="assets/acercade.png" alt="about image">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-content">
+                    <span>Sobre nosotros</span>
+                    <h2>Transformamos la operación de tu negocio con tecnología de geolocalización en tiempo real</h2>
+                    <p>
+                        En Apps Andy desarrollamos una plataforma SaaS con aplicaciones móviles que permiten a empresas
+                        de transporte, limpieza, seguridad, mantenimiento, salud domiciliaria y renta de vehículos
+                        digitalizar y controlar sus procesos operativos de forma simple, accesible y eficiente.
+                    </p>
+                    <p>
+                        Nos diferenciamos porque diseñamos nuestra solución pensando primero en el usuario final. Esto
+                        mejora la experiencia tanto de tus colaboradores como de tus clientes. Desde 2019 trabajamos
+                        para ayudarte a tener el control de tu operación, estés donde estés.
+                    </p>
+                    <ul>
+                        <li><i class="flaticon-check-mark"></i> Información en tiempo real desde tu celular</li>
+                        <li><i class="flaticon-check-mark"></i> Geolocalización y monitoreo de vehículos y personal</li>
+                        <li><i class="flaticon-check-mark"></i> Plataforma económica, funcional y fácil de usar</li>
+                    </ul>
+                    <p>
+                        Nuestra misión es resolver necesidades logísticas de manera humana y eficiente. Nuestra visión:
+                        ser el software de referencia en México y el mundo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="features" class="features-section">
+    <div class="section-header">
+        <p class="section-subtitle">Lo que nos hace diferentes</p>
+        <h2 class="section-title">Tecnología hecha para simplificar tu operación</h2>
+    </div>
+    <p class="section-intro">
+        En Apps Andy desarrollamos herramientas tecnológicas pensadas para empresas que necesitan controlar sus
+        operaciones en campo. Nuestra plataforma es intuitiva, móvil y se adapta a distintas industrias como transporte,
+        limpieza, seguridad o salud.
+    </p>
+    <div class="features-grid">
+        <div class="feature-item">
+            <h3>Geolocalización en Tiempo Real</h3>
+            <p>Visualiza en el mapa la ubicación exacta de tus unidades y personal operativo desde cualquier dispositivo
+                móvil o computadora.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Monitoreo Inteligente de Rutas</h3>
+            <p>Rastrea recorridos, define zonas seguras, recibe alertas automatizadas y mejora la puntualidad de tu
+                operación logística.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Validación Digital de Servicios</h3>
+            <p>Controla entradas, salidas y puntos de validación mediante códigos QR y pases electrónicos para
+                garantizar trazabilidad.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Reportes Automatizados y Personalizables</h3>
+            <p>Obtén datos claros y útiles sobre tu operación para tomar decisiones rápidas y estratégicas, sin depender
+                de hojas de cálculo.</p>
+        </div>
+    </div>
+</section>
+<section id="typesOf" class="giros-section">
+    <div class="section-header">
+        <p class="section-subtitle">Soluciones Especializadas</p>
+        <h2 class="section-title">Giros que Atendemos</h2>
+    </div>
+    <div class="attractive-aspects">
+        <div class="aspect">
+            <div class="icon-circle">
+                <img src="assets/limpieza.png" alt="Limpieza" />
+            </div>
+            <h4>Limpieza</h4>
+            <p>Controla horarios, zonas de trabajo y cumplimiento de rutas mediante geolocalización, alertas en tiempo
+                real
+                y reportes automáticos. Ideal para personal de limpieza en grandes instalaciones.</p>
+        </div>
+        <div class="aspect">
+            <div class="icon-circle">
+                <img src="assets/construccion.png" alt="Construcción" />
+            </div>
+            <h4>Construcción</h4>
+            <p>Gestiona accesos, personal y movilidad digitalmente. Controla contratistas, rutas y equipos con
+                trazabilidad
+                desde la nube, mejorando la seguridad en obra.</p>
+        </div>
+        <div class="aspect">
+            <div class="icon-circle">
+                <img src="assets/mantenimiento.png" alt="Mantenimiento" />
+            </div>
+            <h4>Mantenimiento</h4>
+            <p>Supervisa operaciones, registra evidencia fotográfica y automatiza reportes para cada servicio. Reduce
+                errores humanos y mejora la trazabilidad de los mantenimientos.</p>
+        </div>
+    </div>
+    <div class="attractive-aspects">
+        <div class="aspect">
+            <div class="icon-circle">
+                <img src="assets/rentas.png" alt="Rentas" />
+            </div>
+            <h4>Rentas</h4>
+            <p>Controla la entrega, localización y retorno de vehículos o activos. Rastreo GPS, validación digital de
+                usuarios y registros de uso disponibles al instante.</p>
+        </div>
+        <div class="aspect">
+            <div class="icon-circle">
+                <img src="assets/comedor.png" alt="Comedores" />
+            </div>
+            <h4>Comedores</h4>
+            <p>Registra horarios, controla accesos y obtén reportes diarios. Perfecto para gestionar comedores
+                industriales, escolares o corporativos de manera eficiente.</p>
+        </div>
+        <div class="aspect">
+            <div class="icon-circle">
+                <img src="assets/bienraiz.png" alt="Bienes Raíces" />
+            </div>
+            <h4>Bienes Raíces</h4>
+            <p>Gestiona visitas, personal de campo y seguimiento de propiedades. Usa rutas inteligentes, registros
+                digitales y control desde la nube para una atención más ágil.</p>
+        </div>
+    </div>
+    <div  class="giros-section">
+        <div class="section-header">
+            <p class="section-subtitle">Nosotros</p>
+            <h2 class="section-title">Aspectos Destacados</h2>
+        </div>
+        <div class="attractive-aspects">
+            
+            <div class="aspect">
+                <div class="icon-circle">
+                    <img src="assets/reportes.png" alt="Reportes Automáticos" />
+                </div>
+                <h4>Reportes Automáticos</h4>
+                <p>Obtén evidencia visual y métricas clave sin depender de registros manuales.</p>
+            </div>
+
+            <div class="aspect">
+                <div class="icon-circle">
+                    <img src="assets/qr.png" alt="Control con QR" />
+                </div>
+                <h4>Control con QR</h4>
+                <p>Identifica, valida y da acceso a zonas o servicios desde cualquier celular.</p>
+            </div>
+
+            <div class="aspect">
+                <div class="icon-circle">
+                    <img src="assets/nube.png" alt="Gestión en la Nube" />
+                </div>
+                <h4>Gestión en la Nube</h4>
+                <p>Administra toda tu operación de forma remota y segura, disponible 24/7.</p>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<section id="contactUs" class="contact-section">
+    <div>
+        <div class="section-title">
+            <h2>Contáctanos</h2>
+            <p>Estamos aquí para ayudarte. Completa el formulario y nos pondremos en contacto contigo lo antes posible.
+            </p>
+        </div>
+
+        <div class="contact-info-container">
+            <!-- Cards container -->
+            <div class="info-cards">
+                <!-- Teléfonos -->
+                <div class="info-card">
+                    <h2>Teléfonos</h2>
+                    <p>(+52) 1811631 0210</p>
+                </div>
+
+                <!-- Correos -->
+                <div class="info-card">
+                    <h2>Correo</h2>
+                    <p>borrecool&#64;gmail.com</p>
+                </div>
+
+                <!-- Ubicación -->
+                <div class="info-card">
+                    <h2>Ubicación</h2>
+                    <p>Av Paseo de los Insurgentes #333 </p>
+                    <p>Cumbres 1er sector, N.L. , Mexico</p>
+                </div>
+            </div>
+
+            <!-- Mapa debajo de las tarjetas
+            <div class="map-image">
+                <img src="assets/map.png" alt="Mapa" />
+            </div> -->
+        </div>
+        <!-- Left: Formulario -->
+        <div class="contact-form">
+            <form (ngSubmit)="submitForm()" #formRef="ngForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" name="nombre" placeholder="Nombre" [(ngModel)]="formData.nombre" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="apellidos" placeholder="Apellidos" [(ngModel)]="formData.apellidos"
+                            required />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="email" name="correo" placeholder="Correo electrónico" [(ngModel)]="formData.correo"
+                            required />
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="telefono" placeholder="Teléfono" [(ngModel)]="formData.telefono"
+                            required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <select name="giro" [(ngModel)]="formData.giro" required>
+                        <option value="" disabled selected>Selecciona el giro de tu empresa</option>
+                        <option>Mantenimiento</option>
+                        <option>Rentas</option>
+                        <option>Seguridad</option>
+                        <option>Limpieza</option>
+                        <option>Comedores</option>
+                        <option>Construcción</option>
+                        <option>Bienes y Raíces</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea name="mensaje" placeholder="Mensaje" [(ngModel)]="formData.mensaje" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<section id="use-case" class="use-case-section">
+    <div class="section-title">
+      <h2 >Casos de Éxito</h2>
+      <p>
+        Estas son algunas de las empresas que confían en nosotros para optimizar sus operaciones.
+      </p>
+  
+      <div class="logo-grid1">
+        <img src="assets/bus2u.png" alt="" />
+        <img src="assets/sanicobus.png" alt="Empresa 2" />
+        <img src="assets/vamosmas.png" alt="Empresa 3" />
+      </div>
+    </div>
+  </section>
+<!-- 
+<section id="pricing" class="pricing-section">
+    <div class="section-header">
+        <h2>Planes y Precios</h2>
+        <p> Soluciones escalables y personalizadas para cada necesidad.</p>
+    </div>
+
+    <div class="pricing-grid">
+     
+        <div class="pricing-card">
+            <h3>Basico</h3>
+            <p class="price">$0<span>/mes</span></p>
+            <ul>
+                <li>Monitoreo en tiempo real</li>
+                <li>Descarga app usuarios , PRs</li>
+                <li>Programacion</li>
+                <li>Plan 30 dias Gratis</li>
+            </ul>
+        </div>
+
+       
+        <div class="pricing-card highlighted">
+            <h3>Profesional</h3>
+            <p class="price">$0<span>/mes</span></p>
+            <ul>
+                <li>Todo lo del plan Básico</li>
+                <li>Asignaciónes</li>
+                <li>Capacitación</li>
+                <li>Dashboard avanzado</li>
+                <li>Soporte vía WhatsApp</li>
+            </ul>
+            <button class="btn-outline" (click)="scrollToContact()">Contactanos</button>
+        </div>
+
+   
+        <div class="pricing-card">
+            <h3>Integraciones</h3>
+            <p class="price">Desde $0<span>/anual</span></p>
+            <ul>
+                <li>Todo lo del plan Profesional</li>
+                <li>Tus Aplicaciones personalizadas en tiendas IOS | Android</li>
+                <li>Customizaciones especiales.</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+ -->
+<section id="download" class="download-section">
+    <div class="container">
+        <!-- Left: Texto + Botones -->
+        <div class="download-content">
+            <h2>Descarga nuestra app y transforma tu operación</h2>
+            <p>Haz crecer tu negocio con soluciones tecnológicas personalizadas</p>
+
+            <div class="download-buttons">
+                <a href="https://apps.apple.com/mx/app/and-usuarios/id6523435724" target="_blank">
+                    <img src="assets/3.png" alt="App Store" />
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.adn.user2024" target="_blank">
+                    <img src="assets/4.png" alt="Google Play" />
+                </a>
+            </div>
+        </div>
+
+        <!-- Right: Imagen -->
+        <div class="download-image">
+            <img src="assets/m1.png" alt="App Preview" />
+        </div>
+    </div>
+</section>
+
+<footer class="footer-section">
+    <div class="footer-container">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h4>Trayectos Inteligentes</h4>
+                <p>Soluciones tecnológicas para mejorar la logística, seguridad y eficiencia de tu operación.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#about">Acerca de</a></li>
+                    <li><a href="#typesOf">Giros</a></li>
+                    <li><a href="#features">Módulos</a></li>
+                    <li><a href="#use-case">Casos de Éxito</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Nuestros Servicios</h4>
+                <ul>
+                    <li><a href="#">Geolocalización</a></li>
+                    <li><a href="#">Rutas Inteligentes</a></li>
+                    <li><a href="#">Monitoreo</a></li>
+                    <li><a href="#">Control de accesos</a></li>
+                    <li><a href="#">App móvil personalizada</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© Trayectos Inteligentes | Sistemas</p>
+        </div>
+    </div>
+
+    <button class="scroll-to-top" (click)="scrollToTop()" title="Volver arriba">↑</button>
+</footer>
