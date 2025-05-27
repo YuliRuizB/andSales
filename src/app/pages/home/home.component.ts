@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 @Component({
-  selector: 'app-home',  
+  selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  
+
   showRegistrationForm = false;
 
   formData = {
@@ -18,7 +18,7 @@ export class HomeComponent {
     giro: '',
     mensaje: ''
   };
-  constructor(private firestore: AngularFirestore) {}
+  constructor(private firestore: AngularFirestore) { }
 
   toggleRegistration() {
     this.showRegistrationForm = !this.showRegistrationForm;
@@ -46,7 +46,7 @@ export class HomeComponent {
           mensaje: ''
         };
       })
-      .catch((error : any) => {
+      .catch((error: any) => {
         console.error('Error al enviar el formulario:', error);
         alert('Ocurrió un error al enviar el formulario. Intenta nuevamente.');
       });
@@ -63,16 +63,15 @@ export class HomeComponent {
   }
 
   scrollTyoeOf(): void {
-    const el = document.getElementById('typesOf');
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
+    const mensaje = encodeURIComponent("Hola, busco más información de And");
+    const numero = "5218116310210";
+    window.open(`https://wa.me/${numero}?text=${mensaje}`, "_blank");
   }
 
- toggleMenu() {
+  toggleMenu() {
     const el = document.getElementById('mobileMenu');
     if (el) {
-       el.classList.toggle('show'); // Esta línea muestra u oculta el menú
+      el.classList.toggle('show'); // Esta línea muestra u oculta el menú
       el.scrollIntoView({ behavior: 'smooth' });
     }
   }

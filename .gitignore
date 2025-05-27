@@ -40,3 +40,6 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+environments/
+eval "$(ssh-agent -s)"
+ssh-keygen -t rsa -b 4096 -C "tu-email@ejemplo.com"

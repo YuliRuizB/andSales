@@ -1,34 +1,32 @@
 <header class="navbar">
     <div class="navbar-content">
-      <div class="logo">
-        <img src="assets/andlogo.png" alt="Logo" />
-      </div>
-  
-      <button class="menu-toggle" (click)="toggleMenu()">☰</button>
-  
-      <nav class="nav-links">
+        <div class="logo">
+            <img src="assets/andlogo.png" alt="Logo" />
+        </div>
+
+        <button class="menu-toggle" (click)="toggleMenu()">☰</button>
+
+        <nav class="nav-links">
+            <a href="#about">Acerca de</a>
+            <a href="#typesOf">Giros</a>
+            <a href="#features">Módulos</a>
+            <a href="#use-case">Casos de Éxito</a>
+            <a href="#pricing">Planes</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <button class="btn-outline small" (click)="scrollToContact()">Contacto</button>
+        </div>
+    </div>
+    <!-- Menú en móvil -->
+    <div class="mobile-menu" id="mobileMenu">
         <a href="#about">Acerca de</a>
         <a href="#typesOf">Giros</a>
         <a href="#features">Módulos</a>
         <a href="#use-case">Casos de Éxito</a>
-        <a href="#pricing">Planes</a>
-      </nav>
-  
-      <div class="nav-buttons">
-        <button class="btn-outline small"  (click)="scrollToContact()">Contacto</button>
-      </div>
+        <button class="btn-outline small" (click)="scrollToContact()">Contacto</button>
     </div>
-  
-    <!-- Menú en móvil -->
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#about">Acerca de</a>
-      <a href="#typesOf">Giros</a>
-      <a href="#features">Módulos</a>
-      <a href="#use-case">Casos de Éxito</a>
-      <button class="btn-outline small"  (click)="scrollToContact()">Contacto</button>
-    </div>
-  </header>
-  
+</header>
 
 <div class="hero-container">
     <video autoplay muted loop playsinline class="background-video">
@@ -37,11 +35,12 @@
     </video>
 
     <div class="hero-content">
-        <h1>Sistemas AND</h1>
-        <p>Optimiza tu operación con Apps And: geolocalización, monitoreo y soluciones logísticas en tiempo real.</p>
+        <h1>AND System</h1>
+        <p>Optimiza, monitorea y controla tus operaciones con AND System. Resuelve tus necesidades de geolocalizacion,
+            monitoreo, reportes y obtén información en tiempo real.</p>
         <div class="cta-buttons">
-            <button class="btn-outline"  (click)="scrollToContact()">Solicita una demo gratuita</button>
-            <button class="btn-outline"  (click)="scrollTyoeOf()">Habla con un Asesor</button>
+            <button class="btn-outline" (click)="scrollToContact()">Solicita una demo gratuita</button>
+            <button class="btn-outline" (click)="scrollTyoeOf()">Habla con un Asesor</button>
         </div>
     </div>
 
@@ -60,25 +59,22 @@
             <div class="col-lg-6">
                 <div class="about-content">
                     <span>Sobre nosotros</span>
-                    <h2>Transformamos la operación de tu negocio con tecnología de geolocalización en tiempo real</h2>
+                    <h2>DESARROLLAMOS TECNOLOGIA QUE FACILITA LAS OPERACIONES DE TU NEGOCIO.</h2>
                     <p>
-                        En Apps Andy desarrollamos una plataforma SaaS con aplicaciones móviles que permiten a empresas
-                        de transporte, limpieza, seguridad, mantenimiento, salud domiciliaria y renta de vehículos
-                        digitalizar y controlar sus procesos operativos de forma simple, accesible y eficiente.
+                        AND es un sistema SaaS desarrollado con aplicaciones móviles y paneles de administración para apoyarte en el control y administración de tus  procesos y personal, proporcionándote información en tiempo real, validaciones, registros y evidencias de tu operación.
                     </p>
                     <p>
-                        Nos diferenciamos porque diseñamos nuestra solución pensando primero en el usuario final. Esto
-                        mejora la experiencia tanto de tus colaboradores como de tus clientes. Desde 2019 trabajamos
-                        para ayudarte a tener el control de tu operación, estés donde estés.
+                        Nos diferenciamos porque diseñamos nuestra solución pensando primero en el usuario final lo que nos permite mejorar la experiencia de tus clientes y colaboradores con procesos sencillos y herramientas prácticas. Desde 2019 trabajamos en mejorar continuamente. And te ofrece información y control de tu operación estés donde estés. 
                     </p>
                     <ul>
                         <li><i class="flaticon-check-mark"></i> Información en tiempo real desde tu celular</li>
                         <li><i class="flaticon-check-mark"></i> Geolocalización y monitoreo de vehículos y personal</li>
                         <li><i class="flaticon-check-mark"></i> Plataforma económica, funcional y fácil de usar</li>
+                        <li><i class="flaticon-check-mark"></i> Validación de productos y servicios</li>
+                        <li><i class="flaticon-check-mark"></i> Base de datos y registros para toma de decisiones</li>
                     </ul>
                     <p>
-                        Nuestra misión es resolver necesidades logísticas de manera humana y eficiente. Nuestra visión:
-                        ser el software de referencia en México y el mundo.
+                        Nuestra misión es resolver las necesidades logísticas y operativas con un enfoque humano y eficiente
                     </p>
                 </div>
             </div>
@@ -88,10 +84,10 @@
 <section id="features" class="features-section">
     <div class="section-header">
         <p class="section-subtitle">Lo que nos hace diferentes</p>
-        <h2 class="section-title">Tecnología hecha para simplificar tu operación</h2>
+        <h2  style="color: #9dbbad;" class="section-title">Actualmente AND ofrece soluciones probadas  diferentes mercados</h2>
     </div>
     <p class="section-intro">
-        En Apps Andy desarrollamos herramientas tecnológicas pensadas para empresas que necesitan controlar sus
+        En AND desarrollamos herramientas tecnológicas pensadas para empresas que necesitan controlar sus
         operaciones en campo. Nuestra plataforma es intuitiva, móvil y se adapta a distintas industrias como transporte,
         limpieza, seguridad o salud.
     </p>
@@ -117,79 +113,19 @@
                 de hojas de cálculo.</p>
         </div>
     </div>
-</section>
-<section id="typesOf" class="giros-section">
-    <div class="section-header">
-        <p class="section-subtitle">Soluciones Especializadas</p>
-        <h2 class="section-title">Giros que Atendemos</h2>
-    </div>
-    <div class="attractive-aspects">
-        <div class="aspect">
-            <div class="icon-circle">
-                <img src="assets/limpieza.png" alt="Limpieza" />
-            </div>
-            <h4>Limpieza</h4>
-            <p>Controla horarios, zonas de trabajo y cumplimiento de rutas mediante geolocalización, alertas en tiempo
-                real
-                y reportes automáticos. Ideal para personal de limpieza en grandes instalaciones.</p>
-        </div>
-        <div class="aspect">
-            <div class="icon-circle">
-                <img src="assets/construccion.png" alt="Construcción" />
-            </div>
-            <h4>Construcción</h4>
-            <p>Gestiona accesos, personal y movilidad digitalmente. Controla contratistas, rutas y equipos con
-                trazabilidad
-                desde la nube, mejorando la seguridad en obra.</p>
-        </div>
-        <div class="aspect">
-            <div class="icon-circle">
-                <img src="assets/mantenimiento.png" alt="Mantenimiento" />
-            </div>
-            <h4>Mantenimiento</h4>
-            <p>Supervisa operaciones, registra evidencia fotográfica y automatiza reportes para cada servicio. Reduce
-                errores humanos y mejora la trazabilidad de los mantenimientos.</p>
-        </div>
-    </div>
-    <div class="attractive-aspects">
-        <div class="aspect">
-            <div class="icon-circle">
-                <img src="assets/rentas.png" alt="Rentas" />
-            </div>
-            <h4>Rentas</h4>
-            <p>Controla la entrega, localización y retorno de vehículos o activos. Rastreo GPS, validación digital de
-                usuarios y registros de uso disponibles al instante.</p>
-        </div>
-        <div class="aspect">
-            <div class="icon-circle">
-                <img src="assets/comedor.png" alt="Comedores" />
-            </div>
-            <h4>Comedores</h4>
-            <p>Registra horarios, controla accesos y obtén reportes diarios. Perfecto para gestionar comedores
-                industriales, escolares o corporativos de manera eficiente.</p>
-        </div>
-        <div class="aspect">
-            <div class="icon-circle">
-                <img src="assets/bienraiz.png" alt="Bienes Raíces" />
-            </div>
-            <h4>Bienes Raíces</h4>
-            <p>Gestiona visitas, personal de campo y seguimiento de propiedades. Usa rutas inteligentes, registros
-                digitales y control desde la nube para una atención más ágil.</p>
-        </div>
-    </div>
-    <div  class="giros-section">
+    <div>
         <div class="section-header">
             <p class="section-subtitle">Nosotros</p>
             <h2 class="section-title">Aspectos Destacados</h2>
         </div>
         <div class="attractive-aspects">
-            
+
             <div class="aspect">
                 <div class="icon-circle">
                     <img src="assets/reportes.png" alt="Reportes Automáticos" />
                 </div>
                 <h4>Reportes Automáticos</h4>
-                <p>Obtén evidencia visual y métricas clave sin depender de registros manuales.</p>
+                <p  style="color: #9dbbad;">Obtén evidencia visual y métricas clave sin depender de registros manuales.</p>
             </div>
 
             <div class="aspect">
@@ -197,7 +133,7 @@
                     <img src="assets/qr.png" alt="Control con QR" />
                 </div>
                 <h4>Control con QR</h4>
-                <p>Identifica, valida y da acceso a zonas o servicios desde cualquier celular.</p>
+                <p  style="color: #9dbbad;">Identifica, valida y da acceso a zonas o servicios desde cualquier celular.</p>
             </div>
 
             <div class="aspect">
@@ -205,107 +141,218 @@
                     <img src="assets/nube.png" alt="Gestión en la Nube" />
                 </div>
                 <h4>Gestión en la Nube</h4>
-                <p>Administra toda tu operación de forma remota y segura, disponible 24/7.</p>
+                <p  style="color: #9dbbad;">Administra toda tu operación de forma remota y segura, disponible 24/7.</p>
             </div>
 
+        </div>
+    </div>
+</section>
+<section id="typesOf" class="giros-section">
+    <div class="section-header">
+        <p class="section-subtitle">Soluciones Especializadas AND</p>
+        <h2 class="section-title">Mercados que Atendemos</h2>
+    </div>
+    <div class="attractive-aspects">
+        <div class="aspect">
+            <div class="icon-circle">
+                <img src="assets/transporte.png" alt="Transporte" />
+            </div>
+            <h4>Transporte y logística</h4>
+            <p>Transporte de personal , Transporte de carga, Empresas de grúas, Mensajería y paquetería ,Renta de vehículos con chofer</p>
+        </div>
+        <div class="aspect">
+            <div class="icon-circle">
+                <img src="assets/mantenimiento.png" alt="Campo" />
+            </div>
+            <h4>Servicios en campo</h4>
+            <p>Empresas de limpieza , Empresas de fumigación , Mantenimiento industrial y residencial ,
+                Instalaciones técnicas (electricidad, plomería, aire acondicionado)</p>
+        </div>
+        <div class="aspect">
+            <div class="icon-circle">
+                <img src="assets/logistica.png" alt="Logistica" />
+            </div>
+            <h4>Seguridad y vigilancia</h4>
+            <p>
+                Empresas de guardias de seguridad ,Monitoreo de rondines y patrullajes</p>
+        </div>
+    </div>
+    <div class="attractive-aspects">
+        <div class="aspect">
+            <div class="icon-circle">
+                <img src="assets/medico.png" alt="Salud" />
+            </div>
+            <h4>Salud y atención domiciliaria</h4>
+            <p>Servicios de enfermeros y cuidadores ,Ambulancias privadas</p>
+        </div>
+        <div class="aspect">
+            <div class="icon-circle">
+                <img src="assets/promocion.png" alt="Promociones" />
+            </div>
+            <h4>Promociones y activaciones</h4>
+            <p>Promotoría en puntos de venta , Auditorías de productos y precios</p>
+        </div>
+        <div class="aspect">
+            <div class="icon-circle">
+                <img src="assets/construccion.png" alt="Construccion" />
+            </div>
+            <h4>Construcción y manufactura</h4>
+            <p>Control de entrada y salida de trabajadores ,Fabricación con entregas programadas (por ejemplo, cartón corrugado)</p>
+        </div>
+    </div>
+    <div class="attractive-aspects">
+        <div class="aspect">
+            <div class="icon-circle">
+                <img src="assets/hoteleria.png" alt="Turismo" />
+            </div>
+            <h4>Turismo y movilidad</h4>
+            <p>Tours guiados , Renta de vehículos turísticos con operador</p>
+        </div>
+        <div class="aspect">
+            <div class="icon-circle">
+                <img src="assets/serviciopublico.png" alt="Gobierno" />
+            </div>
+            <h4>Gobiernos y servicios públicos</h4>
+            <p>Transporte urbano gratuito (como San Nicobús) , Servicios municipales (recolección, alumbrado, mantenimiento)</p>
+        </div>
+        <div class="aspect">
+            <div class="icon-circle">
+                <img src="assets/agricultura.png" alt="Agricultura" />
+            </div>
+            <h4>Agricultura y agroindustria</h4>
+            <p>Supervisión de brigadas , Recolección o entrega de productos</p>
+        </div>
+    </div>
+    <div class="attractive-aspects">
+        <div class="aspect">
+          
+        </div>
+        <div class="aspect">
+            <div class="icon-circle">
+                <img src="assets/educacion.png" alt="Gobierno" />
+            </div>
+            <h4>Educación y formación</h4>
+            <p>Supervisión de instructores o capacitadores en campo</p>
+        </div>
+        <div class="aspect">
+           
         </div>
     </div>
 
 </section>
 <section id="contactUs" class="contact-section">
-    <div>
-        <div class="section-title">
-            <h2>Contáctanos</h2>
-            <p>Estamos aquí para ayudarte. Completa el formulario y nos pondremos en contacto contigo lo antes posible.
-            </p>
-        </div>
-
-        <div class="contact-info-container">
-            <!-- Cards container -->
-            <div class="info-cards">
-                <!-- Teléfonos -->
-                <div class="info-card">
-                    <h2>Teléfonos</h2>
-                    <p>(+52) 1811631 0210</p>
-                </div>
-
-                <!-- Correos -->
-                <div class="info-card">
-                    <h2>Correo</h2>
-                    <p>borrecool&#64;gmail.com</p>
-                </div>
-
-                <!-- Ubicación -->
-                <div class="info-card">
-                    <h2>Ubicación</h2>
-                    <p>Av Paseo de los Insurgentes #333 </p>
-                    <p>Cumbres 1er sector, N.L. , Mexico</p>
-                </div>
-            </div>
-
-            <!-- Mapa debajo de las tarjetas
-            <div class="map-image">
-                <img src="assets/map.png" alt="Mapa" />
-            </div> -->
-        </div>
-        <!-- Left: Formulario -->
-        <div class="contact-form">
+    <div class="section-title">
+      <h2>Contáctanos</h2>
+      <p>
+        Estamos aquí para ayudarte. Completa el formulario y nos pondremos en contacto contigo lo antes posible.
+      </p>
+    </div>
+  
+    <div style="display: flex;">
+        <div style="flex: 1; padding: 10px;">
             <form (ngSubmit)="submitForm()" #formRef="ngForm">
                 <div class="form-row">
-                    <div class="form-group">
-                        <input type="text" name="nombre" placeholder="Nombre" [(ngModel)]="formData.nombre" required />
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="apellidos" placeholder="Apellidos" [(ngModel)]="formData.apellidos"
-                            required />
-                    </div>
+                  <div class="form-group">
+                    <input type="text" name="nombre" placeholder="Nombre" [(ngModel)]="formData.nombre" required />
+                  </div>
+                  <div class="form-group">
+                    <input type="text" name="apellidos" placeholder="Apellidos" [(ngModel)]="formData.apellidos" required />
+                  </div>
                 </div>
                 <div class="form-row">
-                    <div class="form-group">
-                        <input type="email" name="correo" placeholder="Correo electrónico" [(ngModel)]="formData.correo"
-                            required />
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" name="telefono" placeholder="Teléfono" [(ngModel)]="formData.telefono"
-                            required />
-                    </div>
+                  <div class="form-group">
+                    <input type="email" name="correo" placeholder="Correo electrónico" [(ngModel)]="formData.correo" required />
+                  </div>
+                  <div class="form-group">
+                    <input type="tel" name="telefono" placeholder="Teléfono" [(ngModel)]="formData.telefono" required />
+                  </div>
                 </div>
                 <div class="form-group">
-                    <select name="giro" [(ngModel)]="formData.giro" required>
-                        <option value="" disabled selected>Selecciona el giro de tu empresa</option>
-                        <option>Mantenimiento</option>
-                        <option>Rentas</option>
-                        <option>Seguridad</option>
-                        <option>Limpieza</option>
-                        <option>Comedores</option>
-                        <option>Construcción</option>
-                        <option>Bienes y Raíces</option>
-                    </select>
+                  <select name="giro" [(ngModel)]="formData.giro" required>
+                    <option value="" disabled selected>Selecciona el giro de tu empresa</option>
+                    <option>Mantenimiento</option>
+                    <option>Rentas</option>
+                    <option>Seguridad</option>
+                    <option>Limpieza</option>
+                    <option>Comedores</option>
+                    <option>Construcción</option>
+                    <option>Bienes y Raíces</option>
+                  </select>
                 </div>
                 <div class="form-group">
-                    <textarea name="mensaje" placeholder="Mensaje" [(ngModel)]="formData.mensaje" rows="5"></textarea>
+                  <textarea name="mensaje" placeholder="Mensaje" [(ngModel)]="formData.mensaje" rows="5"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
+                <div class="form-row" style="justify-content: flex-end; display: flex; margin-top: 1rem;">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </div>
+              </form>
         </div>
-
-    </div>
+        <div style="flex: 1; padding: 10px; ">
+            <img src="assets/registro.png" alt="Imagen de contacto"  style="width: 70%; height: 70%; object-fit: cover;  border-radius: 12px;" />        
+        </div>
+      </div>
+    <div >
+        <div class="contact-form">
+        
+        </div>
+        <div class="contact-image">
+        </div>
+      </div>
+      
 </section>
-
+  
 <section id="use-case" class="use-case-section">
     <div class="section-title">
-      <h2 >Casos de Éxito</h2>
-      <p>
-        Estas son algunas de las empresas que confían en nosotros para optimizar sus operaciones.
-      </p>
-  
-      <div class="logo-grid1">
-        <img src="assets/bus2u.png" alt="" />
-        <img src="assets/sanicobus.png" alt="Empresa 2" />
-        <img src="assets/vamosmas.png" alt="Empresa 3" />
-      </div>
+        <h2>Casos de Éxito</h2>
+        <p>
+            Estas son algunas de las empresas que confían en nosotros para optimizar sus operaciones.
+        </p>
+<!-- 
+        <div class="logo-grid1">
+            <img src="assets/bus2u.png" alt="" />
+            <img src="assets/sanicobus.png" alt="Empresa 2" />
+            <img src="assets/vamosmas.png" alt="Empresa 3" />
+        </div> -->
+
+        <div class="testimonials">
+            <div class="testimonial">
+              <p>"Gracias a Trayectos Inteligentes optimizamos nuestras rutas y mejoramos la puntualidad en un 40%."</p>
+              <h4>María López</h4>
+              <span>Directora de Operaciones - Bus2U</span>
+            </div>
+            <div class="testimonial">
+              <p>"El monitoreo en tiempo real nos ha dado tranquilidad y control total sobre nuestro personal de seguridad."</p>
+              <h4>Jorge Hernández</h4>
+              <span>Gerente General - Sanicobus</span>
+            </div>
+            <div class="testimonial">
+              <p>"La solución fue tan intuitiva que todo nuestro equipo la adoptó rápidamente. Excelente soporte técnico."</p>
+              <h4>Laura Medina</h4>
+              <span>Coordinadora de Logística - VamosMás</span>
+            </div>
+            <div class="testimonial">
+              <p>"Hemos reducido costos operativos significativamente desde que comenzamos a usar sus servicios."</p>
+              <h4>Rafael Díaz</h4>
+              <span>CEO - Transportes México</span>
+            </div>
+            <div class="testimonial">
+              <p>"Una herramienta indispensable para la gestión de flotillas y personal. Lo recomendamos ampliamente."</p>
+              <h4>Ana Torres</h4>
+              <span>Encargada de Movilidad - ProtecPlus</span>
+            </div>
+            <div class="testimonial">
+                <p>"Nos permitió ofrecer a nuestros clientes un nivel de transparencia y confianza que antes no teníamos."</p>
+                <h4>Gabriela Ruiz</h4>
+                <span>Subdirectora Comercial - Grupo Limpia</span>
+              </div>
+              <div class="testimonial">
+                <p>"La plataforma nos ayudó a digitalizar todo el control de rutas sin complicaciones. ¡100% recomendada!"</p>
+                <h4>Carlos Méndez</h4>
+                <span>Encargado de Proyectos - Soluciones Constructivas MX</span>
+              </div>
+          </div>
     </div>
-  </section>
+</section>
 <!-- 
 <section id="pricing" class="pricing-section">
     <div class="section-header">
@@ -380,38 +427,33 @@
 
 <footer class="footer-section">
     <div class="footer-container">
-        <div class="footer-columns">
-            <div class="footer-col">
-                <h4>Trayectos Inteligentes</h4>
-                <p>Soluciones tecnológicas para mejorar la logística, seguridad y eficiencia de tu operación.</p>
-            </div>
-
-            <div class="footer-col">
-                <h4>Enlaces Rápidos</h4>
-                <ul>
-                    <li><a href="#about">Acerca de</a></li>
-                    <li><a href="#typesOf">Giros</a></li>
-                    <li><a href="#features">Módulos</a></li>
-                    <li><a href="#use-case">Casos de Éxito</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>Nuestros Servicios</h4>
-                <ul>
-                    <li><a href="#">Geolocalización</a></li>
-                    <li><a href="#">Rutas Inteligentes</a></li>
-                    <li><a href="#">Monitoreo</a></li>
-                    <li><a href="#">Control de accesos</a></li>
-                    <li><a href="#">App móvil personalizada</a></li>
-                </ul>
-            </div>
-        </div>
 
         <div class="footer-bottom">
+            <p>Teléfono: (+52) 1811631 0210  </p>
+                <p>  Correo: dramirez&#64;bus2u.com.mx </p>
+            <p> Dirección: Av Paseo de los Insurgentes #333 Cumbres 1er sector, N.L. , Mexico </p>
             <p>© Trayectos Inteligentes | Sistemas</p>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61566688692810" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/appsandsales/" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/trayectos-inteligentes/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+              </div>
         </div>
     </div>
+<button class="scroll-to-top" (click)="scrollToTop()" title="Volver arriba">↑</button>
 
-    <button class="scroll-to-top" (click)="scrollToTop()" title="Volver arriba">↑</button>
+<!-- Botón de WhatsApp -->
+<a href="https://wa.me/5218116310210?text=Hola,%20busco%20más%20información%20de%20And"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="whatsapp-button">
+  <img src="assets/whatss1.png" alt="WhatsApp" />
+</a>
 </footer>
